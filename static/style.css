@@ -1,0 +1,107 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #0078d4, #0078d4);
+    margin: 0;
+    padding: 20px;
+    color: white;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.card {
+    background: #77a9da;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    color: white;
+}
+
+button {
+    padding: 10px 18px;
+    margin: 8px;
+    border: none;
+    border-radius: 8px;
+    background: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #45a049;
+}
+
+#charts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#charts img {
+    margin: 10px;
+    border-radius: 10px;
+    width: 300px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table,
+th,
+td {
+    border: 1px solid #ccc;
+    padding: 6px;
+    text-align: center;
+}
+
+#report {
+    text-align: left;
+    margin-top: 15px;
+}
+
+#report h3 {
+    margin-top: 15px;
+    color: #2f3640;
+}
+
+#report ul {
+    padding-left: 20px;
+}
+
+.status-bar {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.step {
+    flex: 1;
+    padding: 10px;
+    margin: 5px;
+    text-align: center;
+    border-radius: 8px;
+    background: #dcdde1;
+    color: #555;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.step.active {
+    background: #00a8ff;
+    color: white;
+}
+
+.step.done {
+    background: #4cd137;
+    color: white;
+}
