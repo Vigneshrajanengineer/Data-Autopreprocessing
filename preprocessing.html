@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Data Platform</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="icon" href="/static/favicon.ico">
+</head>
+
+<body>
+
+<h1>📊 AI Data Preprocessing & Visualization</h1>
+
+<div class="container">
+    
+
+    <div class="card">
+        <h2>📁 Upload Dataset</h2>
+        <input type="file" id="fileInput">
+        <button onclick="uploadFile()">Upload</button>
+    </div>
+    
+
+    <div class="card">
+        <h2>📋 Data Preview</h2>
+        <div id="dataPreview"></div>
+    </div>
+
+    <div class="card">
+    <h2>📊 Data Inspection Report</h2>
+    <button onclick="inspectData()">Generate Report</button>
+
+    <div id="report"></div>
+</div>
+
+    <div class="card">
+        <h2>⚙️ Auto Preprocessing</h2>
+        <button onclick="autoPreprocess()">Run</button>
+    </div>
+
+    <div class="card">
+        <h2>📊 Visualization</h2>
+        <button onclick="visualize()">Generate Charts</button>
+        <button onclick="downloadCharts()">⬇️ Download Charts</button>
+        <div id="charts"></div>
+    </div>
+
+    <div class="card">
+        <h2>⬇️ Download Data</h2>
+        <button onclick="download()">Download CSV</button>
+    </div>
+
+</div>
+
+
+<script src="/static/script.js"></script>
+
+</body>
+</html>
